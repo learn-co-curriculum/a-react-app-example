@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import './App.css';
+import ExampleComponent from './ExampleComponent'
 
 class App extends Component {
   render() {
@@ -15,6 +15,7 @@ class App extends Component {
 JSX lets us include JavaScript functions right along with the HTML, and also
 allows us to add in components, which are separate, self-contained chunks of of JSX.
         </p>
+        <ExampleComponent />
       </div>
     );
   }

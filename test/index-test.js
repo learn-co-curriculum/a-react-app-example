@@ -1,21 +1,32 @@
 import { expect } from 'chai';
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { ExampleComponent } from '../src/index'
+import moment from 'moment'
+import App from '../src/App'
+
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('OlderCoaster', () => {
+describe('App', () => {
   let wrapper;
 
   before(() => {
-    wrapper = shallow(React.createElement(ExampleComponent));
+    wrapper = shallow(React.createElement(App));
   });
 
-  it('should have the right DOM markup', () => {
-    expect(wrapper.html()).to.equal(`<div class="oldercoaster"><p>Two grannies having the time of their life!</p><p>Passengers:</p><ul><li>Agnes</li><li>Muriel</li></ul></div>`);
+  it('should include "Now" in the header instead of a time', () => {
+    expect(wrapper.find('header').text()).to.not.include(moment().format('MMMM Do YYYY'))
+    expect(wrapper.find('header').text()).to.include('Now')
+  });
+
+  it('should include the ExampleComponent', () => {
+    expect(wrapper.text()).to.include('<ExampleComponent />')
+  });
+
+  it('should include the TestComponent', () => {
+    expect(wrapper.text()).to.include('<TestComponent />')
   });
 });
 

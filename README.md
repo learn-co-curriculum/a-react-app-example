@@ -13,13 +13,14 @@ folder structure and gain a better understanding of how these apps are built.
 
 - See an example of a basic React app
 - Gain an overhead view of how the files interact
+- Practice writing in your first React component
 
 #### A Note For In-Browser IDE Users
 
 In order to work on React apps, we create a temporary server in the terminal
 that displays the app in your browser. This server will not work if you are
 using the in-browser Learn IDE. If you are currently using the in-browser IDE,
-you will need to begin using your computer's local environment.
+you will need to begin using your computer's local environment. If you are using a Mac, you can follow [these instructions][setup] for setting everything up locally.
 
 ## Starting Up a React App
 
@@ -80,8 +81,8 @@ allows us to add in components, which are separate, self-contained chunks of of 
 
 It also has some _JavaScript_ code in it, `moment().format('MMMM Do YYYY,
 h:mm:ss a')`. Well, it turns out, this is actually _all_ JavaScript. This is
-called JSX, a syntax extension of JavaScript. It lets us write code that looks
-nearly identical to HTML, but allows us to mix in functions.
+called JSX. It lets us write code that looks nearly identical to HTML, but
+allows us to mix in functions and other neat things.
 
 Reading through the JSX code, we've got one `div` that contains three child
 elements, `header`, `p` and `ExampleComponent` (hmm...). In your browser, _these_
@@ -91,7 +92,7 @@ the app was loaded. The `p` section includes the brief text on JSX.
 The `ExampleComponent` contains the sunglasses GIF.  In the `src` folder, take a
 look at `ExampleComponent.js`. You'll see a file very similar to `App.js`, but
 it contains `img` and `p` elements. By including `<ExampleComponent />` in the
-JSX of `App.js`, we are able to add in JSX content from _other_ files. If you
+JSX of `App.js`, we are able to add in JSX content from the _other_ file. If you
 copy and paste `<ExampleComponent />` so it is listed two times in a row, _two_
 GIFs will appear on the page.
 
@@ -118,7 +119,7 @@ contained within this App class.
 We've already seen that it is possible to have multiple files that contain
 visible content, App and ExampleComponent. ExampleComponent, however, is used
 within App. App is at the top most level, the _parent component_ of all visible
-content. This is the case in all of the React labs in this course.
+content.
 
 ## Importing, Exporting and the Chain
 
@@ -128,6 +129,7 @@ There are two other things in the `App.js` file we haven't touched on:
 import React, { Component } from 'react';
 import moment from 'moment';
 import ExampleComponent from './ExampleComponent'
+import TestComponent from './TestComponent'
 ...
 
 export default App;
@@ -138,8 +140,8 @@ is _pulling in_ specific content from these two packages! You can see in the App
 class that `Component` and `moment` are both being used. They are being
 _imported_ in from the `node_modules` folder.
 
-The import for `ExampleComponent` is slightly different. In this case, `App.js`
-is pulling in another file in the same directory, `./ExampleComponent`, which
+The imports for `ExampleComponent` and `TestComponent` are slightly different. In this case, `App.js`
+is pulling in other files in the same directory, like `./ExampleComponent`, which
 allows it to use `<ExampleComponent />` as we saw earlier.
 
 Then, what is happening with `export`? By including the `export` line, we are
@@ -160,6 +162,18 @@ Inside `index.js` is some regular JavaScript, `document.getElementById('root')`.
 Even though React is a modern, complex framework, it still relies on a regular
 `index.html` file! The file can be found in the `public` folder.
 
+## Deliverables
+
+There are three tests to pass in this lesson. They are all related to the
+content within `App.js`.
+
+1. Replace the contents of the `header` element so that instead of a time, it just says 'Now'
+2. Make sure to include `<ExampleComponent />` (if you have removed it)
+3. Add in a _new_ component, `<TestComponent />`, just below ExampleComponent
+
+You can open two terminals tabs to both run `npm start` _and_ test the lab using
+`learn`.
+
 ## Conclusion
 
 There is a lot still we haven't touched on, and we will go into greater depth on
@@ -171,3 +185,9 @@ This file structure is used by Facebook, the creators of React, in its tool,
 `create-react-app`.  Using this structure, a lot of set up is abstracted away.
 We do not need to deal with writing the HTML document or connecting it with
 JavaScript, as it is always the same `index.html` and `index.js` file content.
+
+## Resources
+
+- [Mac OSX Environment Set Up](http://help.learn.co/workflow-tips/local-environment/mac-osx-manual-environment-set-up)
+
+[setup]: http://help.learn.co/workflow-tips/local-environment/mac-osx-manual-environment-set-up

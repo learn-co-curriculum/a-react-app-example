@@ -2,31 +2,33 @@
 
 ## Overview
 
-Before we dive in and start working on specific parts and the concepts involved
-in React project, let's take a look at a simple React app so we can understand
-it at a high level.
+Before we dive in and start working on specific parts of a React project, let's
+take a look at a simple React app so we can understand it at a high level.
 
-In this lesson, we will start up a basic React app, look at the file and
-folder structure and gain a better understanding of how these apps are built.
+In this lesson, we will start with a basic React app, examine the default
+directory structure and gain a better understanding of how these apps are built.
+
 
 ## Objectives
 
 - See an example of a basic React app
-- Gain an overhead view of how the files interact
-- Practice writing in your first React component
+- Gain an overview of how the files interact
+- Practice writing your first React component
 
 #### A Note For In-Browser IDE Users
 
 In order to work on React apps, we create a temporary server in the terminal
 that displays the app in your browser. This server will not work if you are
 using the in-browser Learn IDE. If you are currently using the in-browser IDE,
-you will need to begin using your computer's local environment. If you are using a Mac, you can follow [these instructions][setup] for setting everything up locally.
+you will need to begin using your computer's local environment. If you are using
+a Mac, you can follow [these instructions][setup] for setting everything up
+locally.
 
 ## Starting Up a React App
 
 This lesson has all the necessary parts of a fully working React app. To check
-the app out, fork and clone this lesson onto your computer, navigate into the
-lesson in the terminal and run:
+the app out, fork and clone this lesson onto your computer, navigate into
+directory, and run:
 
 ```sh
 npm install

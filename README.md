@@ -170,7 +170,7 @@ Inside `index.js` is some regular JavaScript, `document.getElementById('root')`.
 Even though React is a modern, complex framework, it still relies on a regular
 `index.html` file to load the JavaScript! The file can be found in the `public`
 folder. Take a look at it and try identify how `public/index.html` is connected
-to `src/App.js`
+to `src/index.js`
 
 
 ## Deliverables
@@ -193,10 +193,12 @@ how things work throughout the following lessons. Almost all of our work,
 however, will be done within `App.js` and child components of it. This is where
 all of our creative energy will be spent.
 
-This file structure is used by Facebook, the creators of React, in its tool,
-`create-react-app`.  Using this structure, a lot of set up is abstracted away.
-We do not need to deal with writing the HTML document or connecting it with
-JavaScript, as it is always the same `index.html` and `index.js` file content.
+This file structure is used by Facebook, the creators of React, and is what
+`create-react-app` automatically generates. Using this structure, a lot of
+set-up is abstracted away. We do not need to deal with writing the HTML document
+or connecting it with JavaScript, as it is always the boiler plate code with
+`index.html`, `index.js`, and `App.js`.
+
 
 ## Resources
 

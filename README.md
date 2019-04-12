@@ -202,6 +202,6 @@ or connecting it with JavaScript, as it is always the boiler plate code with
 
 ## Resources
 
-- [Mac OSX Environment Set Up](http://help.learn.co/workflow-tips/local-environment/mac-osx-manual-environment-set-up)
+- [Mac OSX Environment Set Up][setup]
 
-[setup]: http://help.learn.co/workflow-tips/local-environment/mac-osx-manual-environment-set-up
+[setup]: https://help.learn.co/technical-support/local-environment/mac-osx-manual-environment-set-up

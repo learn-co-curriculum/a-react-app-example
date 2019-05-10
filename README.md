@@ -125,6 +125,25 @@ visible content, (i.e. by using both `App` and `ExampleComponent`.
 `ExampleComponent`, however, is used within `App`. `App` is at the top most
 level, the _parent component_ of our React app content.
 
+## Heads Up! 
+`create-react-app` version 3.0.0 was released April 22, 2019. It
+makes a small change that defines `App` slightly differently. When you run
+`create-react-app` it may generate `class App extends Component` if you have
+an old version, or `function App() {` if you have a newer version. Both are
+fine. Don't be surprised if you see an `App` that looks like the code block
+below.
+
+If you ever find you need class component features (like `.state`) you can
+change `App` from a function to a class and write out the class's `render()`
+method.
+
+```js
+function App() {
+  return (
+    // JSX goes here!
+  )
+}
+```
 
 ## Importing, Exporting, and the Component Chain
 

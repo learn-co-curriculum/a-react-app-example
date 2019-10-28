@@ -171,7 +171,7 @@ In this case, `App.js` is importing files in the same directory, like
 `render()` method.
 
 OK, then what is happening with `export`? By including the `export` line, we are
-allowing _other_ files to _import_ this `App.js` file. There are different types
+allowing _other_ files to _import_ things from `App.js` file. There are different types
 of exports, like [named exports and default exports](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export)
 
 We will focus on default exports. The line, `export default App` denotes that

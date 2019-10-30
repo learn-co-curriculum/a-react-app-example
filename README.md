@@ -172,9 +172,9 @@ In this case, `App.js` is importing files in the same directory, like
 
 OK, then what is happening with `export`? By including the `export` line, we are
 allowing _other_ files to _import_ things from the `App.js` file. There are different types
-of exports, like [named exports and default exports](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export).
+of exports, like named exports and default exports, but will dive deeper into this topic in a later lesson. 
 
-We will focus on default exports. The line, `export default App` denotes that
+For now, we will just focus on default exports. The line, `export default App` denotes that
 our App class is the main thing we want to export from our `App.js` file. You
 can have only one default export per file. If you take a look at one of the
 other JS files, `index.js`, you can see that at the top of the file, we are

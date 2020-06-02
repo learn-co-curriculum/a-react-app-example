@@ -59,7 +59,7 @@ If everything has worked correctly, you should see a page with the exact time it
 was loaded, along with a small amount of text and a GIF.
 
 If we make any changes to our app while the server is running, it will 'hot
-reload,' and update the app in the browser. If there are app breaking errors in
+reload,' and update the app in the browser. If there are app-breaking errors in
 your code, the browser will display those errors instead.
 
 
@@ -121,8 +121,8 @@ the key thing to understand is that all of the _visible content_ of our app is
 contained within this App class.
 
 We've already seen that it is possible to have multiple files that contain
-visible content, (i.e. by using both `App` and `ExampleComponent`.
-`ExampleComponent`, however, is used within `App`. `App` is at the top most
+visible content, i.e., by using both `App` and `ExampleComponent`.
+`ExampleComponent`, however, is used within `App`. `App` is at the top-most
 level, the _parent component_ of our React app content.
 
 ## Heads Up!
@@ -133,10 +133,6 @@ an old version, or `function App() {` if you have a newer version. Both are
 fine. Don't be surprised if you see an `App` that looks like the code block
 below.
 
-If you ever find you need class component features (like `.state`) you can
-change `App` from a function to a class and write out the class's `render()`
-method.
-
 ```js
 function App() {
   return (
@@ -144,6 +140,10 @@ function App() {
   )
 }
 ```
+
+If you ever find you need class component features (like `.state`) you can
+change `App` from a function to a class and write out the class's `render()`
+method.
 
 ## Importing, Exporting, and the Component Chain
 

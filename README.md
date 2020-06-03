@@ -8,7 +8,6 @@ take a look at a simple React app so we can understand it at a high level.
 In this lesson, we will start with a basic React app, examine the default
 directory structure and gain a better understanding of how these apps are built.
 
-
 ## Objectives
 
 - See an example of a basic React app
@@ -61,7 +60,6 @@ was loaded, along with a small amount of text and a GIF.
 If we make any changes to our app while the server is running, it will 'hot
 reload,' and update the app in the browser. If there are app-breaking errors in
 your code, the browser will display those errors instead.
-
 
 ## Reading `App.js`
 
@@ -198,7 +196,6 @@ Even though React is a modern, complex framework, it still relies on a regular
 folder. Take a look at it and try identify how `public/index.html` is connected
 to `src/index.js`
 
-
 ## Deliverables
 
 There are three tests to pass in this lesson. They are all related to the
@@ -210,7 +207,6 @@ content within `App.js`.
 
 You can open two terminal tabs to both run `npm start` _and_ test the lab using
 `learn` or `npm test`.
-
 
 ## Conclusion
 
@@ -224,7 +220,6 @@ This file structure is used by Facebook, the creators of React, and is what
 set-up is abstracted away. We do not need to deal with writing the HTML document
 or connecting it with JavaScript, as it is always the boiler plate code with
 `index.html`, `index.js`, and `App.js`.
-
 
 ## Resources
 

@@ -225,4 +225,5 @@ or connecting it with JavaScript, as it is always the boiler plate code with
 
 - [Mac OSX Environment Set Up][setup]
 
+
 [setup]: https://help.learn.co/technical-support/local-environment/mac-osx-manual-environment-set-up

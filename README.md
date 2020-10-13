@@ -26,8 +26,8 @@ locally.
 ## Starting Up a React App
 
 This lesson has all the necessary parts of a fully working React app. To check
-the app out, fork and clone this lesson onto your computer, navigate into
-directory, and run:
+the app out, fork and clone this lesson onto your computer, navigate into the
+lesson's directory, and run:
 
 ```sh
 npm install

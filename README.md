@@ -193,7 +193,7 @@ The `index.js` file doesn't have an export. It is the 'top' of this chain.
 Inside `index.js` is some regular JavaScript, `document.getElementById('root')`.
 Even though React is a modern, complex framework, it still relies on a regular
 `index.html` file to load the JavaScript! The file can be found in the `public`
-folder. Take a look at it and try identify how `public/index.html` is connected
+folder. Take a look at it and try to identify how `public/index.html` is connected
 to `src/index.js`
 
 ## Deliverables
